@@ -1,0 +1,127 @@
+.nav {
+  display: flex;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__link {
+  padding: 0.4rem 2rem;
+
+  color: $black;
+
+  border-radius: $bord-rad-17;
+
+  transition: background 0.3s linear;
+
+  &:hover {
+    color: $black;
+
+    background-color: darken($gray, 3%);
+  }
+}
+
+.nav__link--active {
+  color: $white;
+
+  background-color: $pink;
+}
+
+/* Mobile menu */
+
+.sidenav {
+  padding-top: 4rem;
+  width: 0;
+  height: 100%;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  text-align: center;
+
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 0.4s linear;
+}
+
+.nav__link--mobile {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  border-radius: 0;
+  font-size: 1.5rem;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 50px;
+  color: #000;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+// Hamburger button
+.nav-toggle {
+  display: none;
+  padding: 0 10px;
+  margin-left: auto;
+  width: 50px;
+  height: 30px;
+
+  line-height: 1;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: all 0.3s linear;
+
+  @media (max-width: 768px) {
+    display: block;
+
+    &:hover {
+      background-color: #cccccc;
+    }
+  }
+
+}
+
+.nav-toggle span {
+  position: relative;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.4s;
+
+  border-radius: 10px;
+}
+
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-toggle span::before {
+  top: 8px;
+}

@@ -1,0 +1,33 @@
+.circle {
+  width: 450px;
+  height: 450px;
+
+  position: absolute;
+  right: 4rem;
+  bottom: 8rem;
+  z-index: 2;
+
+  border-radius:  61% 39% 30% 70% / 58% 37% 63% 42%;
+  background: linear-gradient(to bottom, #ff566d, #ff94fe);
+  box-shadow: $circle-shadow;
+
+  animation: circleRadius 6s alternate infinite;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+@keyframes circleRadius {
+  0% {
+    border-radius:  61% 39% 30% 70% / 58% 37% 63% 42%;
+  }
+  50% {
+    border-radius: 64% 36% 36% 64% / 58% 50% 50% 42%;
+    transform: translate3d(-20px, -30px, 0)
+  }
+  100% {
+    border-radius: 73% 27% 59% 41% / 34% 71% 29% 66%;
+    transform: translate3d(-20px, -30px, 0)
+  }
+}

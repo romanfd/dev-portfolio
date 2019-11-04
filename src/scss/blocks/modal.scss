@@ -1,0 +1,86 @@
+/* Redefinition bootstrap */
+// Modal
+.modal-content {
+  padding: 2.2rem;
+
+  position: relative;
+
+  background-color: $white;
+  border-radius: $bord-rad-5;
+}
+
+// My custom style
+.modal__close {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  z-index: 1;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  transition: transform 0.3s linear;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.modal__close-icon {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  fill: $white;
+}
+
+.modal__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $pink;
+}
+
+.modal__text {
+  font-weight: 500;
+
+  margin-bottom: 1.6rem;
+}
+
+.modal__row {
+  align-items: center;
+}
+
+// Modal form
+.modal-form__group {
+  margin-bottom: 1rem;
+}
+
+.modal-form__input {
+  padding: 0.9rem 2rem;
+  display: block;
+  width: 100%;
+
+  font-size: 1rem;
+  line-height: 1.1;
+  font-weight: 500;
+  color: $input-text;
+
+  border: 1px solid $input-rad;
+  border-radius: $bord-rad-5;
+
+  &:focus {
+    outline: none;
+    border-color: $pink;
+  }
+}

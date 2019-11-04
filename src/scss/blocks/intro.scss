@@ -1,0 +1,34 @@
+.intro__text {
+  font-size: 1.2rem;
+
+  color: $dark-gray;
+}
+
+.intro__title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @media (max-width: 992px) {
+    font-size: 2.2rem;
+  }
+}
+
+.intro__subtitle {
+  margin-bottom: 3rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  @media (max-width: 992px) {
+    font-size: 1.2rem;
+  }
+}
+
+.intro__subtitle--pink {
+  color: $pink;
+}
+
+.intro__row {
+  align-items: center;
+}

@@ -1,0 +1,19 @@
+.author {
+  display: block;
+  width: 400px;
+
+  position: absolute;
+  right: 10rem;
+  bottom: 0;
+  z-index: 3;
+
+  @media (max-width: 1199px) {
+    right: 0;
+
+    width: 350px;
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

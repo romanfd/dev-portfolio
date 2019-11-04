@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+
+  padding: 2rem 0;
+}
+
+.main--inner-page {
+  justify-content: flex-start;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+  @media (max-width: 991px) {
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
